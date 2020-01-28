@@ -1,0 +1,7 @@
+a = input()
+b=list(a)
+c = len(b)
+d=(b[0])
+e=(b[c-1])
+addition = int(d)+int(e)
+print(addition)
