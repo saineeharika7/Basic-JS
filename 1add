@@ -1,9 +1,0 @@
-a = input()
-b=list(a)
-c = len(b)
-s=0
-for i in range(c):
-    s += int(b[i])
-print(s)
-
-
