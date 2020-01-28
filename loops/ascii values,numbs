@@ -1,0 +1,9 @@
+p=1
+while(p==1):
+    for i in range(65,91):
+        n= chr(i)
+        print(n,i)
+    for j in range(97,123):
+        s = chr(j)
+        print(s,j)
+        p += 1 
