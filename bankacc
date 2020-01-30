@@ -1,0 +1,66 @@
+import random
+l = []
+d={}
+balancem = 0
+def register():
+    name = input("enter your name:")
+    email = input("enter your email:")
+    password= input("enter your password:")
+    mobilenumb = int(input("enter your mobile number:"))
+    uniquekey = random.randint(1,200)
+    while uniquekey in l :
+        uniquekey = random.radint(1,200)
+    l.append(uniquekey) 
+    d.update({uniquekey:[name,email,password,mobilenumb,balancem]})
+    file=open("ban.txt","a+")
+    file.write(str(d))
+    file.close()
+    return d
+print(register())
+def login():
+    uniquekey = int(input("enter your unique key :"))
+    password = input("enter your password:")
+    while uniquekey not in l:
+        print("your key is wrong")
+        uniquekey = int(input("enter your key again:"))
+        value = list(d[uniquekey])
+        print(value)
+        while password != value[2]:
+            print("your password is wrong")
+            password = input("enter again:")
+        if password == value[2]:
+            n="logged in"
+        return n
+print(login())
+
+def withdraw():
+    draw=int(input("Amount to be withdrawn : "))
+    if draw>balancem:
+        print("No minimum balance")
+    else:
+        total=balancem-draw
+        print("The balance in your account = %d"%total)
+def balance():
+    print("The balance in your Account= %d"%balancem)
+def deposit():
+    z=int(input("enter your uniquekey:"))
+    depositm=int(input("deposit amt = "))
+    total=balancem+depositm
+    print("The Balance in your account = %d"%total)
+tocontinue='y'
+while tocontinue in ('y','Y'):
+    print("Choose: \n1.Withdraw\n2.Balance Checking\n3.deposit")
+    choice=int(input("Your choice"))
+    if choice==1:
+        if balancem<10000:
+            print("No minimum balance")
+        else:
+            withdraw()
+    elif choice==2:
+        balance()
+    elif choice==3:
+        deposit()
+    tocontinue=input("choose y for yes or n for no\n")
+
+
+
