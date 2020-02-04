@@ -1,0 +1,11 @@
+function isSameLength(a,b) {
+   if(a.length == b.length) {
+     console.log("true")
+   }
+   else {
+     console.log("false")
+   }
+};
+a=prompt("enter your string:")
+b=prompt("enter your string:")
+isSameLength(a,b)
