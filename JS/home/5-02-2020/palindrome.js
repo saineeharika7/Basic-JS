@@ -1,12 +1,17 @@
 var a=function() {
-var  b=['121','51','670','7777','83'];
-for(var i=0;i<b.length;i++) {
-  var d=b[i].length;
-  if(b[i][0]==b[i][d-1]){
+var  b=['121','51','12','7777','83'];
+for(var i=0;i<b.length;i++){
+  var c= b[i].split("");
+  var d=c.reverse("");
+  var e =d.join("");
+
+  if(b[i]==e){
     console.log(b[i]);
   }
+}
+
     
-  }
-     
-};
+  
+  
+}
   a();
