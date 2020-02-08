@@ -1,0 +1,14 @@
+<!DOCTYPE.html>
+<html>
+<head><title>welcome!</title>
+<body>
+<h1> get through this link below </h1>
+<p>if u are having any basics of html then u can access the html5 easily.</p>
+<p> there are no such things existing on earth. </p>
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+</body>
+</head>
+</html>
