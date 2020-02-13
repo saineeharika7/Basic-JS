@@ -13,8 +13,9 @@ function term(data){
     else if (N == 0){
 	return "0"
     }
-    else
+    else{
 	return (N*N)
+    }
     
     
     
