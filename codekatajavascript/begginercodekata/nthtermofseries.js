@@ -11,7 +11,7 @@ function term(data){
 	console.log("Error");
     }
     else if (N == 0){
-	console.log(0);
+	return "0"
     }
     else
 	return (N*N)
